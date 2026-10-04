@@ -24,25 +24,28 @@
 <body>
 
   <h1>Politique de confidentialité</h1>
-  <p class="updated">Dernière mise à jour : février 2026</p>
+  <p class="updated">Dernière mise à jour : octobre 2026</p>
 
   <h2>1. Présentation</h2>
   <p>Stop SPAM est une application Android qui bloque automatiquement les appels provenant de numéros de téléphone non-sollicités (numéros NPV — Numéros à Valeur ajoutée non sollicités), en utilisant l'API de filtrage d'appels fournie par Android.</p>
   <p>Éditeur : Développeur indépendant<br>Contact : stopspam.app@gmail.com</p>
 
   <h2>2. Données collectées</h2>
-  <p>Stop SPAM ne collecte, ne stocke et ne transmet aucune donnée personnelle.</p>
+  <p>Stop SPAM ne collecte aucune donnée permettant de vous identifier.</p>
   <ul>
     <li>Aucun compte utilisateur n'est requis.</li>
-    <li>Aucune donnée relative aux appels reçus (numéros, durée, identité) n'est enregistrée ou envoyée à un serveur distant.</li>
-    <li>L'application fonctionne entièrement en local sur votre appareil.</li>
+    <li>L'historique des appels bloqués et vos listes personnelles sont stockés uniquement sur votre appareil. Ils ne sont jamais envoyés à un serveur.</li>
+    <li><strong>Signalement d'un numéro (facultatif)</strong> : uniquement si vous utilisez la fonction « Signaler un numéro », l'application transmet au développeur le numéro signalé, la catégorie choisie, un identifiant aléatoire créé par l'application (sans lien avec votre identité ni avec votre numéro) et la version de l'application. Ces informations servent uniquement à vérifier un numéro avant son éventuel ajout à la liste de blocage.</li>
   </ul>
 
   <h2>3. Permissions utilisées</h2>
-  <p>L'application demande la permission suivante :</p>
   <ul>
-    <li><strong>CALL_SCREENING (CallScreeningService)</strong> — service système Android permettant d'intercepter et bloquer les appels entrants correspondant aux plages NPV. Aucune conversation n'est écoutée ni enregistrée.</li>
+    <li><strong>Filtrage des appels (CallScreeningService)</strong> — service système Android permettant d'intercepter et bloquer les appels entrants correspondant aux plages NPV. Aucune conversation n'est écoutée ni enregistrée.</li>
+    <li><strong>Notifications</strong> — résumé hebdomadaire et, en option, notification à chaque appel bloqué.</li>
+    <li><strong>Accès Internet</strong> — mise à jour de la liste de blocage et envoi des signalements.</li>
+    <li><strong>Facturation Google Play</strong> — achat unique de la version Premium.</li>
   </ul>
+  <p>L'application n'a accès ni à vos contacts, ni à votre journal d'appels, ni à vos SMS, ni à votre position, ni à votre micro, ni à vos fichiers.</p>
 
   <h2>4. Liste de blocage (ARCEP)</h2>
   <p>Les plages de numéros bloqués sont issues des données publiques publiées par l'ARCEP (Autorité de Régulation des Communications Électroniques et des Postes), conformément à la Décision n° 2022-1583.</p>
@@ -53,10 +56,15 @@
 
   <h2>6. Services tiers</h2>
   <p>L'application ne fait appel à aucun service d'analyse (analytics), publicité, ou suivi de comportement (Firebase, Facebook SDK, etc.).</p>
-  <p>Le seul service externe utilisé est Google Play Billing pour la gestion de l'achat intégré.</p>
+  <p>Services externes utilisés :</p>
+  <ul>
+    <li>Google Play Billing, pour la gestion de l'achat intégré.</li>
+    <li>GitHub, qui héberge la liste de blocage (simple téléchargement, sans identifiant).</li>
+    <li>Google Forms, qui reçoit les signalements facultatifs décrits à la section 2.</li>
+  </ul>
 
   <h2>7. Sécurité</h2>
-  <p>Les données de blocage étant traitées entièrement en local, elles ne transitent par aucun réseau et ne sont exposées à aucun risque de fuite externe.</p>
+  <p>L'historique des appels bloqués et vos listes personnelles étant traités entièrement en local, ils ne transitent par aucun réseau et ne sont exposés à aucun risque de fuite externe.</p>
 
   <h2>8. Droits des utilisateurs (RGPD)</h2>
   <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :</p>
@@ -65,7 +73,7 @@
     <li>Droit à la portabilité.</li>
     <li>Droit d'opposition.</li>
   </ul>
-  <p>Étant donné qu'aucune donnée personnelle n'est collectée, ces droits s'exercent directement sur votre appareil (désinstallation de l'application, effacement des données via les paramètres Android).</p>
+  <p>Étant donné qu'aucune donnée permettant de vous identifier n'est collectée, ces droits s'exercent directement sur votre appareil (désinstallation de l'application, effacement des données via les paramètres Android). Pour faire supprimer un signalement envoyé, écrivez à <a href="mailto:stopspam.app@gmail.com">stopspam.app@gmail.com</a> en indiquant le numéro signalé.</p>
 
   <h2>9. Contact</h2>
   <p>Pour toute question relative à cette politique de confidentialité :<br>
